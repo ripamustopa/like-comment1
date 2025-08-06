@@ -211,7 +211,7 @@ const gallery = document.getElementById("gallery");
 photos.forEach((photo, i) => {
   const galleryItem = document.createElement("div");
   galleryItem.classList.add("gallery-item");
-  galleryItem.setAttribute("data-aos", "fade-up");
+  //galleryItem.setAttribute("data-aos", "fade-up");
   galleryItem.innerHTML = `
                 <div class="id">${i + 1}</div>
                 <img src="${photo.src} (${i}).jpg" alt="${photo.alt}${i} ">
@@ -236,3 +236,4 @@ AOS.init({
   easing: "ease-out",
   once: true,
 });
+
